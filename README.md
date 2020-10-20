@@ -18,6 +18,6 @@
 * [백트래킹](https://github.com/chaticker/algorithm/edit/main/README.md)
 * [시뮬레이션](https://github.com/chaticker/algorithm/edit/main/README.md)
 
-### 해당 알고리즘 문제 풀이
+### 알고리즘 문제 풀이
 
 ### 팀노트
