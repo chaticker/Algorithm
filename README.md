@@ -10,4 +10,4 @@
 * [이진탐색](https://github.com/chaticker/algorithm/edit/main/README.md)
 * [BFS/DFS](https://github.com/chaticker/algorithm/edit/main/README.md)
 
-##### 해당 알고리즘 문제 풀이
+### 해당 알고리즘 문제 풀이
