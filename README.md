@@ -1,4 +1,4 @@
-### 알고리즘 개념
+### 알고리즘 개념 & 팀노트
 
 * [정렬](https://github.com/chaticker/algorithm/blob/main/Algorithm/%EC%A0%95%EB%A0%AC.md)
 * [스택/큐](https://github.com/chaticker/algorithm/blob/main/Algorithm/%EC%8A%A4%ED%83%9D%20%26%20%ED%81%90.md)
@@ -19,5 +19,3 @@
 * [시뮬레이션](https://github.com/chaticker/algorithm/edit/main/README.md)
 
 ### 알고리즘 문제 풀이
-
-### 팀노트
