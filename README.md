@@ -19,4 +19,4 @@
 * [시뮬레이션](https://github.com/chaticker/algorithm/edit/main/README.md)
 
 ### 알고리즘 문제 풀이
-[문](https://github.com/chaticker/algorithm/tree/main/%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4)
+[문제풀이](https://github.com/chaticker/algorithm/tree/main/%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4)
