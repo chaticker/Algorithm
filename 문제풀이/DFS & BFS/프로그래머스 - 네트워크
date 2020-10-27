@@ -1,0 +1,32 @@
+[프로그래머스 - 네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162)
+
+```python
+def solution(n, computers):
+    answer = 0 
+    visit = [0] * n #방문 노드 체크 리스트
+    start = 0 
+    
+    def dfs(start):
+        #탐색을 시작할 노드 넣기
+        st = [start]
+        
+        while st:
+            #앞에서부터 노드 하나씩 꺼내기
+            last = st.pop()
+            #방문하지 않은 노드라면 1로 바꿔줌
+            if visit[last] == 0:
+                visit[last] = 1
+            #방문한 노드가 이전에 방문한 적이 없다면 리스트에 넣기
+            for i in range(len(computers[0])):
+                if not visit[i] and computers[last][i] ==1:
+                    st.append(i)
+                    
+    i = 0
+    while visit:
+        #방문 안했으면 dfs로 재귀
+        if visit[i] == 0:
+            dfs(i)
+            answer += 1
+        i += 1
+    return answer
+```
