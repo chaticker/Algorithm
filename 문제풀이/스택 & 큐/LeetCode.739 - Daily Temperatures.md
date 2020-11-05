@@ -16,4 +16,4 @@ class Solution:
 ![KakaoTalk_20201104_024327744](https://user-images.githubusercontent.com/23302973/98021406-a4b88700-1e47-11eb-938c-4431b6166140.jpg)
 ![KakaoTalk_20201104_024327964](https://user-images.githubusercontent.com/23302973/98021409-a5511d80-1e47-11eb-8126-1b164b14e1cc.jpg)
 
-[monotone stack이란?](https://justicehui.github.io/medium-algorithm/2019/01/01/monotoneStack/)
+* [monotone stack이란?](https://justicehui.github.io/medium-algorithm/2019/01/01/monotoneStack/)
