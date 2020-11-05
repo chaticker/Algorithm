@@ -14,8 +14,9 @@
 ##### 추가 알고리즘
 
 * [투 포인터 / 슬라이딩 윈도우](https://github.com/chaticker/algorithm/edit/main/README.md)
-* [백트래킹](https://github.com/chaticker/algorithm/edit/main/README.md)
-* [시뮬레이션](https://github.com/chaticker/algorithm/edit/main/README.md)
+* [다익스트라, 플로이드 와샬](https://github.com/chaticker/algorithm/edit/main/README.md)
+* [문자열(KMP), 문자열(보이어 무어)](https://github.com/chaticker/algorithm/edit/main/README.md)
+* [문자열(라빈 카프), 문자열(Trie)](https://github.com/chaticker/algorithm/edit/main/README.md)
 
 ### 알고리즘 문제 풀이
 [문제풀이](https://github.com/chaticker/algorithm/tree/main/%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4)
