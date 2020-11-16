@@ -1,6 +1,6 @@
 [LeetCode.1004 - Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)
 
-```python
+
 def longestOnes(self, a: List[int], k: int) -> int:
         st, res = 0, 0
         for i in range(len(a)):
@@ -12,4 +12,4 @@ def longestOnes(self, a: List[int], k: int) -> int:
                 st += 1              
             res = max(res, i-st+1)
         return res
-```
+
