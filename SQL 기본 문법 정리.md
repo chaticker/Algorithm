@@ -51,4 +51,20 @@ SELECT * FROM 테이블명 WHERE text LIKE '%\%%';
 -- _를 검색할떄도 이스케이프 (\_) 시켜야한다.
 ```
 
-* 
+### 정렬 & 연산
+
+* ORDER BY 정렬
+- ORDER BY로 오름차순 정렬하기
+```sql
+SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명; //기본이 오름차순
+SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 ASC;
+```
+- ORDER BY로 내림차순 정렬하기
+```sql
+SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 DESC;
+```
+- 복수의 열을 지정해 정렬하기
+```sql
+SELECT 열명 FROM 테이블명 WHERE 조건식 
+ORDER BY 열명1 정렬방식, 열명2 정렬방식; //정렬방식엔 ASC나 DESC
+```
