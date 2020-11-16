@@ -68,3 +68,32 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 DESC;
 SELECT 열명 FROM 테이블명 WHERE 조건식 
 ORDER BY 열명1 정렬방식, 열명2 정렬방식; //정렬방식엔 ASC나 DESC
 ```
+* SELECT 구로 연산하기
+```sql
+SELECT *, price * quantity FROM 테이블명;
+--price와 quantity라는 열과 그들을 곱셈한 결과를 이용해서 새로운 열를 만들어 낸다.
+--열명은 price * quantity로 나온다.
+```
+* WHERE 구에서 연산하기
+```sql
+SELECT *, price * quantity AS amount FROM 테이블명 
+WHERE price * quantity >= 2000;
+--SELECT 구에서 지정한 별명은 WHERE 구에서 쓸 수 없다.
+--처리 순서가 WHERE구 -> SELECT 구 순서이기 떄문.
+```
+* ORDER BY 구에서 연산하기
+```sql
+SELECT *, price * quantity AS amount FROM 테이블명 
+WHERE price * quantity >= 2000
+ORDER BY amount DESC;
+--SELECT 구에서 지정한 별명을 ORDER BY 절에서는 쓸 수 있다.
+--처리 순서가 WHERE 구 -> SELECT 구 -> ORDER BY 구 순서이기 때문
+```
+* 열의 별명 (에일리어스 alias)
+```sql
+SELECT *, price * quantity AS amount FROM 테이블명;
+--price * quantity의 결과가 amount라는 새로운 별명으로 표시된다.
+SELECT *, price * quantity amount FROM 테이블명;
+--AS 키워드 생략가능
+```
+* 
