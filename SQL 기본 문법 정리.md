@@ -57,7 +57,7 @@ SELECT * FROM 테이블명 WHERE text LIKE '%\%%';
 
 -ORDER BY로 오름차순 정렬하기
 ```sql
-SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명; //기본이 오름차순
+SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명; --기본이 오름차순
 SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 ASC;
 ```
 -ORDER BY로 내림차순 정렬하기
@@ -67,7 +67,7 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 DESC;
 -복수의 열을 지정해 정렬하기
 ```sql
 SELECT 열명 FROM 테이블명 WHERE 조건식 
-ORDER BY 열명1 정렬방식, 열명2 정렬방식; //정렬방식엔 ASC나 DESC
+ORDER BY 열명1 정렬방식, 열명2 정렬방식; --정렬방식엔 ASC나 DESC
 ```
 
 * SELECT 구로 연산하기
@@ -101,4 +101,57 @@ SELECT *, price * quantity AS amount FROM 테이블명;
 SELECT *, price * quantity amount FROM 테이블명;
 --AS 키워드 생략가능
 ```
-* 
+* 함수
+-ROUND 함수
+-CONCAT 함수 (문자열 결합)
+```sql
+SELECT CONCAT(열명1, 열명2) FROM 테이블명;
+--열명1이 10이고 열명2가 '개'라는 문자라면 10개로 출력된다.
+```
+-SUBSTRING 함수 (문자열 자르기)
+```sql
+SUBSTRING('가나다라마사', 1, 4)
+--'가나다라'
+
+SUBSTRING('가나다라마사', 5, 2)
+--'마사'
+```
+-TRIM 함수 (여분의 스페이스 제거하기)
+```sql
+TRIM('가나다   ')
+--'가나다'
+```
+-CURRENT_TIMESTAMP 함수 (시스템 날짜)
+```sql
+SELECT CURRENT_TIMESTMAP;
+--시스템의 현재 날짜 출력
+
+SELECT CURRENT_TIMESTAP + INTERVAL 1 DAY;
+--1일 후로 계산
+```
+
+### CASE문으로 데이터 변환하기
+* 검색 CASE문
+```sql
+CASE WHEN 조건식1 THEN 식1
+     [WHEN 조건식2 THEN 식2 ...]
+     [ELSE 식3]
+     END
+     
+CASE WHEN 열명 IS NULL THEN 0 ELSE 열명 END
+--CASE문으로 NULL값을 0으로 변환하기 
+--(참고로 NULL값을 변환하는 경우라면 COALESCE 함수를 사용해도 된다.)
+```
+* 단순 CASE문
+```sql
+CASE 식1 
+     WHEN 식2 THEN 식3
+     [WHEN 식4 THEN 식5 ...]
+     [ELSE 식6]
+     END
+     
+CASE gender_code WHEN 1 THEN '남자'
+                 WHEN 2 THEN '여자' 
+                 ELSE '미지정 END "성별"
+--gender_code에 따라 문자열인 남자 여자로 바꾸기     
+```
