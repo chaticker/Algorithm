@@ -10,7 +10,7 @@ SELECT 열명1, 열명2 FROM 테이블명; --테이블의 열명1 열명2에 대
 ```sql
 SELECT 열1, 열2 FROM 테이블명 WHERE 조건식;
 ```
-조건 지정
+  -조건 지정
 ```sql
 SELECT * FROM 테이블명 WHERE no = 2; 
 --no열의 값이 2인 경우만 조회
@@ -26,7 +26,7 @@ SELECT * FROM 테이블명 WHERE name IS NULL;
 --name 열이 NULL인 경우만 조회
 ```
 
-조건 조합
+  -조건 조합
 ```sql
 SELECT * FROM 테이블명 WHERE 조건1 AND 조건2;
 SELECT * FROM 테이블명 WHERE 조건1 OR 조건2;
@@ -36,7 +36,7 @@ SELECT * FROM 테이블명 WHERE NOT 조건;
 SELECT * FROM 테이블명 WHERE (a=1 OR a=2) AND (b=1 OR b=2);
 ```
 
-패턴 매칭에 의한 검색
+  -패턴 매칭에 의한 검색
 ```sql
 SELECT * FROM 테이블명 WHERE text LIKE 'SQL%';
 --text라는 열에서 SQL로 시작하는 내용이 있다면 검색한다. (전방매치) 
