@@ -51,6 +51,36 @@ SELECT * FROM 테이블명 WHERE text LIKE '%\%%';
 -- _를 검색할떄도 이스케이프 (\_) 시켜야한다.
 ```
 
+### 추가 & 삭제 & 갱신
+* INSERT(행 추가하기)
+```sql
+INSERT INTO 테이블명 VALUES (값1, 값2, ...);  
+--테이블의 모든 열 구성에 맞게 입력  
+
+INSERT INTO 테이블명(열1, 열2, ...) VALUES (값1, 값2, ...);  
+--원하는 열에만 값을 입력  
+--명시하지 않은 열에는 NULL이나 DEFAULT로 선언된 값이 들어간다.  
+```
+* DEFAULT 값
+```sql
+INSERT INTO 테이블명(열1, 열2) VALUES (2, DEFAULT);  
+--명시적으로 Default 값으로 넣기      
+INSERT INTO 테이블명(열1) VALUES (2);  
+--암묵적으로 Default 값으로 넣기
+```
+* DELETE(삭제하기)
+```sql
+DELETE FROM 테이블명 \[WHERE 조건식\];  
+--조건식이 없다면 모든 데이터가 삭제된다.  
+
+TRUNCATE TABLE 테이블명;  
+--모든 행을 지우려면 DELETE문으로 지우는 것보다 처리속도가 매우 빠르다.
+```
+* UPDATE(데이터 갱신하기)
+```sql
+UPDATE 테이블명 SET 열1 = 값1, 열2 = 값2, ... \[WHERE 조건식\];
+```
+
 ### 정렬 & 연산
 
 * ORDER BY 정렬
@@ -155,3 +185,5 @@ CASE gender_code WHEN 1 THEN '남자'
                  ELSE '미지정 END "성별"
 --gender_code에 따라 문자열인 남자 여자로 바꾸기     
 ```
+
+### 집계함수 & 서브쿼리
